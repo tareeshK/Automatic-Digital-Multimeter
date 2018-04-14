@@ -1,6 +1,7 @@
 # Automatic-Digital-Multimeter
 Low-cost multi-channel digital multimeter using PSoC 4/5.
-If you ever wanted to constantly monitor/ plot one or more voltage, capcacitance , resistance, current then this project may help you.
+This project is intended to constantly monitor/ plot one or more voltage, capcacitance , resistance, current.  
+Currently only supports DC voltage upto 5V and Capacitance in pF. 
 
 ## Operating Requirements ##
 * Windows XP/7/10 and everything in between
@@ -10,7 +11,7 @@ If you ever wanted to constantly monitor/ plot one or more voltage, capcacitance
 ## Hardware ##
 CY8CKIT-043 is used here as it cheap and readily available, but it can be modified for any Cypress Kit. 
 
-## Working ##
+## Description ##
 PSoC programmer provides COM that can be used with win32com API in python. 
 This also gives python the ability to directly talk to the MCU over I2C/SPI/UART. 
 I2C is more structured and pretty scalable and is hence used here. 
@@ -27,3 +28,9 @@ Register Address | Type of data | Channel name
 0x14  | uint16  | C2
 0x16  | uint16  | C3
 
+## Future Enhancements ##
+AC Voltage
+DC Current 
+AC Current
+Inductance
+Cross platform (linux and MAC)
