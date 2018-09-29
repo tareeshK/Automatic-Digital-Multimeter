@@ -14,10 +14,8 @@ CY8CKIT-043 is used here as it cheap and readily available, but it can be modifi
 ## Description ##
 PSoC programmer provides COM that can be used with win32com API in python. 
 This also gives python the ability to directly talk to the MCU over I2C/SPI/UART. 
-I2C is more structured and pretty scalable and is hence used here. 
-PSoC 4 is configured as an I2C slave with a register map.
 
-Register Address | Type of data | Channel name 
+Sent Message | Response Type | Response Name 
 ------------- | ------------- | ---------------
 0x00  | float32 | V0
 0x04  | float32 | V1
